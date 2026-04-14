@@ -94,8 +94,7 @@ map <LEADER>r :Rg<Enter>
 let g:fzf_buffers_jump = 1
 map ' "
 
-let g:suda#prefix = 'sudo://'
-cmap w!! w sudo://%
+cmap w!! w suda://%:p
 
 autocmd FileType haskell setlocal keywordprg=hoogle\ --info
 command! HaskellRun terminal runhaskell %
